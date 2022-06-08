@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>About</title>
+    <title>Azure DevOps &amp; terraform to deploy Azure resources</title>
     <link rel="stylesheet" href="http://localhost:2368/assets/built/screen.css?v=99b488d2f1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,20 +14,31 @@
     <meta name="referrer" content="no-referrer-when-downgrade" />
     
     <meta property="og:site_name" content="IT Lad" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="About" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Azure DevOps &amp; terraform to deploy Azure resources" />
     <meta property="og:description" content="Thoughts, stories and ideas." />
-    <meta property="og:url" content="http://localhost:2368/about/" />
-    <meta property="article:published_time" content="2022-06-07T06:02:04.000Z" />
-    <meta property="article:modified_time" content="2022-06-08T01:57:08.000Z" />
+    <meta property="og:url" content="http://localhost:2368/azure-devops-terraform-to-deploy-azure-resources/" />
+    <meta property="og:image" content="http://localhost:2368/content/images/2022/06/terraform-1.jpg" />
+    <meta property="article:published_time" content="2022-06-08T05:39:22.000Z" />
+    <meta property="article:modified_time" content="2022-06-08T05:39:48.000Z" />
+    <meta property="article:tag" content="Terraform" />
+    <meta property="article:tag" content="Azure" />
+    <meta property="article:tag" content="Azure DevOps" />
+    <meta property="article:tag" content="CI/CD" />
+    
     <meta property="article:publisher" content="https://www.facebook.com/ghost" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="About" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Azure DevOps &amp; terraform to deploy Azure resources" />
     <meta name="twitter:description" content="Thoughts, stories and ideas." />
-    <meta name="twitter:url" content="http://localhost:2368/about/" />
+    <meta name="twitter:url" content="http://localhost:2368/azure-devops-terraform-to-deploy-azure-resources/" />
+    <meta name="twitter:image" content="http://localhost:2368/content/images/2022/06/terraform-1.jpg" />
     <meta name="twitter:label1" content="Written by" />
     <meta name="twitter:data1" content="Yuvraj Arava" />
+    <meta name="twitter:label2" content="Filed under" />
+    <meta name="twitter:data2" content="Terraform, Azure, Azure DevOps, CI/CD" />
     <meta name="twitter:site" content="@ghost" />
+    <meta property="og:image:width" content="1017" />
+    <meta property="og:image:height" content="309" />
     
     <script type="application/ld+json">
 {
@@ -50,10 +61,17 @@
         "url": "http://localhost:2368/author/yuvraj/",
         "sameAs": []
     },
-    "headline": "About",
-    "url": "http://localhost:2368/about/",
-    "datePublished": "2022-06-07T06:02:04.000Z",
-    "dateModified": "2022-06-08T01:57:08.000Z",
+    "headline": "Azure DevOps &amp; terraform to deploy Azure resources",
+    "url": "http://localhost:2368/azure-devops-terraform-to-deploy-azure-resources/",
+    "datePublished": "2022-06-08T05:39:22.000Z",
+    "dateModified": "2022-06-08T05:39:48.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "http://localhost:2368/content/images/2022/06/terraform-1.jpg",
+        "width": 1017,
+        "height": 309
+    },
+    "keywords": "Terraform, Azure, Azure DevOps, CI/CD",
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "http://localhost:2368/"
@@ -129,7 +147,7 @@
 }</style><style>:root {--ghost-accent-color: #0084ff;}</style>
 </head>
 
-<body class="page-template page-about">
+<body class="post-template tag-terraform tag-azure tag-azure-devops tag-ci-cd">
     <div class="site">
         <header class="site-header">
     <div class="navbar">
@@ -144,8 +162,8 @@
             <a class="menu-item-link" href="../index.html">Home</a>
         </li>
         <li
-            class="menu-item menu-item-about menu-item-current">
-            <a class="menu-item-link" href="index.html">About</a>
+            class="menu-item menu-item-about">
+            <a class="menu-item-link" href="../about/index.html">About</a>
         </li>
 </ul>
             </nav>
@@ -163,20 +181,134 @@
         <div class="content-column col-lg-8">
             <div class="content-area">
                 <main class="site-main">
-                        <article class="post no-image no-image single u-shadow">
+                        <article class="post tag-terraform tag-azure tag-azure-devops tag-ci-cd single u-shadow">
                             <header class="post-header">
+            <a class="post-tag" href="../tag/terraform/index.html">Terraform</a>
     <h1 class="post-title">
-            About
+            Azure DevOps &amp; terraform to deploy Azure resources
     </h1>
-</header>                                                        <div class="post-wrapper">
-                                <div class="post-content gh-content">
-                                    
-                                </div>
+</header>                            <div class="post-meta">
+                                <time class="post-meta-date" datetime="2022-06-08">
+                                    Jun 8, 2022
+                                </time>
+                                <span class="post-meta-length">1 min read</span>
                             </div>
+                                <figure class="post-media">
+        <div class="u-placeholder">
+            <a class="post-image-link" href="index.html">
+                <img class="post-image lazyload"
+                    data-srcset="/content/images/size/w400/2022/06/terraform-1.jpg 400w, /content/images/size/w750/2022/06/terraform-1.jpg 750w, /content/images/size/w960/2022/06/terraform-1.jpg 960w"
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-sizes="auto" alt="Azure DevOps &amp; terraform to deploy Azure resources">
+            </a>
+        </div>
+
+    </figure>
+                            <div class="post-wrapper">
+                                <div class="post-content gh-content">
+                                    <figure class="kg-card kg-image-card"><img src="../content/images/2022/06/vscode-1.jpg" class="kg-image" alt loading="lazy" width="1920" height="999" srcset="../content/images/size/w600/2022/06/vscode-1.jpg 600w, ../content/images/size/w1000/2022/06/vscode-1.jpg 1000w, ../content/images/size/w1600/2022/06/vscode-1.jpg 1600w, ../content/images/2022/06/vscode-1.jpg 1920w" sizes="(min-width: 720px) 720px"></figure>
+                                </div>
+                                    <div class="post-tags">
+        <a class="tag tag-terraform" href="../tag/terraform/index.html"
+                title="Terraform">Terraform</a><a class="tag tag-azure" href="../tag/azure/index.html"
+                title="Azure">Azure</a><a class="tag tag-azure-devops" href="../tag/azure-devops/index.html"
+                title="Azure DevOps">Azure DevOps</a><a class="tag tag-ci-cd" href="../tag/ci-cd/index.html"
+                title="CI/CD">CI/CD</a>
+    </div>
+                                    <div class="share u-hover-wrapper">
+    <a class="share-item share-facebook u-hover-item"
+        href="https://www.facebook.com/sharer.php?u=http://localhost:2368/azure-devops-terraform-to-deploy-azure-resources/"
+        target="_blank"><i class="icon icon-facebook"></i></a>
+    <a class="share-item share-twitter u-hover-item"
+        href="https://twitter.com/intent/tweet?url=http://localhost:2368/azure-devops-terraform-to-deploy-azure-resources/&text=Azure%20DevOps%20%26%20terraform%20to%20deploy%20Azure%20resources"
+        target="_blank"><i class="icon icon-twitter"></i></a>
+    <a class="share-item share-pinterest u-hover-item"
+        href="https://pinterest.com/pin/create/button/?url=http://localhost:2368/azure-devops-terraform-to-deploy-azure-resources/&media=&description=Azure%20DevOps%20%26%20terraform%20to%20deploy%20Azure%20resources"
+        target="_blank"><i class="icon icon-pinterest"></i></a>
+    <a class="share-item share-linkedin u-hover-item"
+        href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:2368/azure-devops-terraform-to-deploy-azure-resources/&title=Azure%20DevOps%20%26%20terraform%20to%20deploy%20Azure%20resources"
+        target="_blank"><i class="icon icon-linkedin"></i></a>
+    <a class="share-item share-reddit u-hover-item"
+        href="https://reddit.com/submit?url=http://localhost:2368/azure-devops-terraform-to-deploy-azure-resources/&title=Azure%20DevOps%20%26%20terraform%20to%20deploy%20Azure%20resources"
+        target="_blank"><i class="icon icon-reddit"></i></a>
+    <a class="share-item share-vk u-hover-item"
+        href="http://vk.com/share.php?url=http://localhost:2368/azure-devops-terraform-to-deploy-azure-resources/&title=Azure%20DevOps%20%26%20terraform%20to%20deploy%20Azure%20resources"
+        target="_blank"><i class="icon icon-vk"></i></a>
+</div>                            </div>
                         </article>
-                </main>
+                                <section class="author u-shadow">
+        <div class="author-image-placeholder u-placeholder">
+            <img class="author-image lazyload u-object-fit"
+                data-src=""
+                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                alt="Yuvraj Arava">
+        </div>
+        <div class="author-wrapper">
+            <header class="author-header">
+                <div class="author-header-wrapper">
+                    <h4 class="author-name">Yuvraj Arava</h4>
+                    <div class="author-social">
+                        <a class="author-social-item author-more"
+                            href="../author/yuvraj/index.html">More posts</a>
+                    </div>
+                </div>
+            </header>
+            <div class="author-bio"></div>
+        </div>
+    </section>
+                        <div class="navigation">
+
+</div>                                        </main>
             </div>
         </div>
+            <div class="sidebar-column col-lg-3 hidden-xs hidden-sm hidden-md">
+                <aside class="widget-area">
+    <div class="widget widget-facebook widget-no-title u-shadow">
+    <div class="fb-page" data-href="__YOUR_FACEBOOK_PAGE_URL__"
+        data-small-header="false" data-hide-cover="false"
+        data-show-facepile="true" data-hide-cta="false" data-tabs="none">
+    </div>
+</div>    <div class="widget widget-tags u-shadow">
+    <h4 class="widget-title">Tags</h4>
+        <div class="tag-feed">
+                <div class="tag">
+                    <a class="tag-link" href="../tag/azure/index.html">
+                        <span class="tag-name">Azure</span>
+                        <span class="tag-count">1</span>
+                    </a>
+                </div>
+                <div class="tag">
+                    <a class="tag-link" href="../tag/azure-devops/index.html">
+                        <span class="tag-name">Azure DevOps</span>
+                        <span class="tag-count">1</span>
+                    </a>
+                </div>
+                <div class="tag">
+                    <a class="tag-link" href="../tag/ci-cd/index.html">
+                        <span class="tag-name">CI/CD</span>
+                        <span class="tag-count">1</span>
+                    </a>
+                </div>
+                <div class="tag">
+                    <a class="tag-link" href="../tag/terraform/index.html">
+                        <span class="tag-name">Terraform</span>
+                        <span class="tag-count">1</span>
+                    </a>
+                </div>
+        </div>
+</div>    <div class="widget widget-recent u-shadow">
+    <h4 class="widget-title">Recent Posts</h4>
+            <div class="recent-posts">
+                    <article class="recent">
+                        <header class="post-header">
+    <h5 class="post-title">
+            <a class="post-title-link" href="index.html">Azure DevOps &amp; terraform to deploy Azure resources</a>
+    </h5>
+        <time class="post-date" datetime="2022-06-08">
+    Jun 8, 2022
+</time></header>                    </article>
+            </div>
+</div></aside>            </div>
     </div>
 </div>
         </div>
@@ -219,8 +351,8 @@
             <a class="menu-item-link" href="../index.html">Home</a>
         </li>
         <li
-            class="menu-item menu-item-about menu-item-current">
-            <a class="menu-item-link" href="index.html">About</a>
+            class="menu-item menu-item-about">
+            <a class="menu-item-link" href="../about/index.html">About</a>
         </li>
 </ul>
     </div>
@@ -264,7 +396,7 @@
                     <article class="recent">
                         <header class="post-header">
     <h5 class="post-title">
-            <a class="post-title-link" href="../azure-devops-terraform-to-deploy-azure-resources/index.html">Azure DevOps &amp; terraform to deploy Azure resources</a>
+            <a class="post-title-link" href="index.html">Azure DevOps &amp; terraform to deploy Azure resources</a>
     </h5>
         <time class="post-date" datetime="2022-06-08">
     Jun 8, 2022
