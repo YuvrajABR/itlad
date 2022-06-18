@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Azure DevOps &amp; terraform to deploy Azure resources</title>
-    <link rel="stylesheet" href="../assets/built/screen.css@v=1860ff5f94.css">
+    <link rel="stylesheet" href="../assets/built/screen.css@v=24bb00106a.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dosis:wght@700&family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
@@ -14,28 +14,32 @@
     <link rel="canonical" href="index.html" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
     
-    <meta property="og:site_name" content="IT Lad -  Yuvraj Arava" />
+    <meta property="og:site_name" content="IT Lad" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="Azure DevOps &amp; terraform to deploy Azure resources" />
     <meta property="og:description" content="Sharing My Experience" />
     <meta property="og:url" content="http://localhost:2368/azure-devops-terraform-to-deploy-azure-resources/" />
+    <meta property="og:image" content="http://localhost:2368/content/images/2022/06/ADO-ARM.jpg" />
     <meta property="article:published_time" content="2022-06-08T05:39:22.000Z" />
-    <meta property="article:modified_time" content="2022-06-10T01:52:33.000Z" />
+    <meta property="article:modified_time" content="2022-06-10T08:51:34.000Z" />
     <meta property="article:tag" content="Terraform" />
     <meta property="article:tag" content="Azure" />
     <meta property="article:tag" content="Azure DevOps" />
     <meta property="article:tag" content="CI/CD" />
     
     <meta property="article:publisher" content="https://www.facebook.com/ghost" />
-    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Azure DevOps &amp; terraform to deploy Azure resources" />
     <meta name="twitter:description" content="Sharing My Experience" />
     <meta name="twitter:url" content="http://localhost:2368/azure-devops-terraform-to-deploy-azure-resources/" />
+    <meta name="twitter:image" content="http://localhost:2368/content/images/2022/06/ADO-ARM.jpg" />
     <meta name="twitter:label1" content="Written by" />
     <meta name="twitter:data1" content="Yuvraj Arava" />
     <meta name="twitter:label2" content="Filed under" />
     <meta name="twitter:data2" content="Terraform, Azure, Azure DevOps, CI/CD" />
     <meta name="twitter:site" content="@ghost" />
+    <meta property="og:image:width" content="581" />
+    <meta property="og:image:height" content="271" />
     
     <script type="application/ld+json">
 {
@@ -43,11 +47,13 @@
     "@type": "Article",
     "publisher": {
         "@type": "Organization",
-        "name": "IT Lad -  Yuvraj Arava",
+        "name": "IT Lad",
         "url": "http://localhost:2368/",
         "logo": {
             "@type": "ImageObject",
-            "url": "http://localhost:2368/content/images/size/w256h256/format/jpeg/2022/06/me-1.jpg"
+            "url": "http://localhost:2368/content/images/size/w256h256/format/jpeg/2022/06/me-1.jpg",
+            "width": 60,
+            "height": 60
         }
     },
     "author": {
@@ -65,7 +71,13 @@
     "headline": "Azure DevOps &amp; terraform to deploy Azure resources",
     "url": "http://localhost:2368/azure-devops-terraform-to-deploy-azure-resources/",
     "datePublished": "2022-06-08T05:39:22.000Z",
-    "dateModified": "2022-06-10T01:52:33.000Z",
+    "dateModified": "2022-06-10T08:51:34.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "http://localhost:2368/content/images/2022/06/ADO-ARM.jpg",
+        "width": 581,
+        "height": 271
+    },
     "keywords": "Terraform, Azure, Azure DevOps, CI/CD",
     "mainEntityOfPage": {
         "@type": "WebPage",
@@ -75,7 +87,7 @@
     </script>
 
     <meta name="generator" content="Ghost 5.2" />
-    <link rel="alternate" type="application/rss+xml" title="IT Lad -  Yuvraj Arava" href="../rss/index.html" />
+    <link rel="alternate" type="application/rss+xml" title="IT Lad" href="../rss/index.html" />
     <script defer src="https://unpkg.com/@tryghost/portal@~2.2.0/umd/portal.min.js" data-ghost="http://localhost:2368/" data-key="d595f42b9236f77bfa936cceb1" data-api="http://localhost:2368/ghost/api/content/" crossorigin="anonymous"></script><style id="gh-members-styles">.gh-post-upgrade-cta-content,
 .gh-post-upgrade-cta {
     display: flex;
@@ -148,7 +160,7 @@
     <div class="navbar">
         <div class="navbar-left">
             <a class="logo" href="../index.html">
-        <span class="logo-text">IT Lad -  Yuvraj Arava</span>
+        <span class="logo-text">IT Lad</span>
 </a>        </div>
             <nav class="main-menu hidden-xs hidden-sm hidden-md">
                 <ul class="nav-list u-plain-list">
@@ -159,6 +171,10 @@
         <li
             class="menu-item menu-item-about">
             <a class="menu-item-link" href="../about/index.html">About</a>
+        </li>
+        <li
+            class="menu-item menu-item-profile">
+            <a class="menu-item-link" href="../profile/index.html">Profile</a>
         </li>
 </ul>
             </nav>
@@ -176,7 +192,7 @@
         <div class="content-column col-lg-8">
             <div class="content-area">
                 <main class="site-main">
-                        <article class="post tag-terraform tag-azure tag-azure-devops tag-ci-cd no-image no-image single u-shadow">
+                        <article class="post tag-terraform tag-azure tag-azure-devops tag-ci-cd single u-shadow">
                             <header class="post-header">
             <a class="post-tag" href="../tag/terraform/index.html">Terraform</a>
     <h1 class="post-title">
@@ -188,7 +204,18 @@
                                 </time>
                                 <span class="post-meta-length">1 min read</span>
                             </div>
-                                                        <div class="post-wrapper">
+                                <figure class="post-media">
+        <div class="u-placeholder">
+            <a class="post-image-link" href="index.html">
+                <img class="post-image lazyload"
+                    data-srcset="/content/images/size/w400/2022/06/ADO-ARM.jpg 400w, /content/images/size/w750/2022/06/ADO-ARM.jpg 750w, /content/images/size/w960/2022/06/ADO-ARM.jpg 960w"
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-sizes="auto" alt="Azure DevOps &amp; terraform to deploy Azure resources">
+            </a>
+        </div>
+
+    </figure>
+                            <div class="post-wrapper">
                                 <div class="post-content gh-content">
                                     <figure class="kg-card kg-image-card"><img src="../content/images/2022/06/vscode-1.jpg" class="kg-image" alt loading="lazy" width="1920" height="999" srcset="../content/images/size/w600/2022/06/vscode-1.jpg 600w, ../content/images/size/w1000/2022/06/vscode-1.jpg 1000w, ../content/images/size/w1600/2022/06/vscode-1.jpg 1600w, ../content/images/2022/06/vscode-1.jpg 1920w" sizes="(min-width: 720px) 720px"></figure>
                                 </div>
@@ -338,6 +365,10 @@
             class="menu-item menu-item-about">
             <a class="menu-item-link" href="../about/index.html">About</a>
         </li>
+        <li
+            class="menu-item menu-item-profile">
+            <a class="menu-item-link" href="../profile/index.html">Profile</a>
+        </li>
 </ul>
     </div>
         <aside class="widget-area">
@@ -449,7 +480,7 @@
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous">
         </script>
-    <script src="../assets/built/main.min.js@v=1860ff5f94"></script>
+    <script src="../assets/built/main.min.js@v=24bb00106a"></script>
 
     <div id="fb-root"></div>
 <script async defer crossorigin="anonymous"
